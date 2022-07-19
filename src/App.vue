@@ -6,7 +6,7 @@
   <div class="infos">
     <div class="title">Date Formatter</div>
     <div class="description">
-      <p>Pequeno projeto prático criado para estudo, que tem a finalidade de praticar<br /> o processo de recepção e
+      <p>Pequeno projeto criado para estudo, que tem a finalidade de praticar<br /> o processo de recepção e
         formatação de datas recebidas de uma <strong>API</strong> Utilizando<strong> Javascript.</strong></p>
       <p><strong>API</strong> utilizada no projeto:<a href="https://jsonplaceholder.typicode.com/"
           target="__blank">  JSONPlaceholder — Free Fake REST API.</a></p>
