@@ -1,30 +1,30 @@
 <script >
+import TimeLine from "./components/timeLine.vue";
 
 export default {
-  data() {
-    return {
-      response: [],
-      receivedDate: new Date,
-      convertedDate: ''
-    }
-  },
-
-  mounted() {
-
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-      method: 'POST',
-      body: JSON.stringify({
-        date: new Date,
-      }),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    })
-      .then((response) => response.json())
-      .then((json) => {
-        this.response = json;
-      })
-  }
+    data() {
+        return {
+            response: [],
+            receivedDate: new Date,
+            convertedDate: ""
+        };
+    },
+    mounted() {
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            body: JSON.stringify({
+                date: new Date,
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+        })
+            .then((response) => response.json())
+            .then((json) => {
+            this.response = json;
+        });
+    },
+    components: { TimeLine }
 }
 
 </script>
@@ -59,6 +59,8 @@ export default {
     </div>
 
   </div>
+
+  <TimeLine />
 
 </template>
 
@@ -101,8 +103,10 @@ strong {
 
 .content {
   width: 55%;
-  height: 600px;
+  height: auto;
   margin: 0 auto;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--vt-c-green);
 }
 
 input {
@@ -150,6 +154,7 @@ label {
 #format,
 button {
   margin-top: 8px;
+  margin-bottom: 40px;
   height: 38px;
   color: black;
   background-color: var(--vt-c-black);
