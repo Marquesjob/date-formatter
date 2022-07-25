@@ -2,34 +2,42 @@
 import TimeLine from "./components/timeLine.vue";
 
 export default {
-    data() {
-        return {
-            response: [],
-            receivedDate: new Date,
-            convertedDate: ""
-        };
-    },
-    mounted() {
-        fetch("https://jsonplaceholder.typicode.com/posts", {
-            method: "POST",
-            body: JSON.stringify({
-                date: new Date,
-            }),
-            headers: {
-                "Content-type": "application/json; charset=UTF-8",
-            },
-        })
-            .then((response) => response.json())
-            .then((json) => {
-            this.response = json;
-        });
-    },
-    components: { TimeLine }
+  data() {
+    return {
+      response: [],
+      convertedDate: ''
+    };
+  },
+  methods: {
+    formatDate() {
+      this.convertedDate = this.response.date;
+      this.convertedDate = Intl.DateTimeFormat('pt-br').format(new Date(this.convertedDate));
+      return this.convertedDate;
+    }
+  },
+
+  mounted() {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      body: JSON.stringify({
+        date: new Date,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((response) => response.json())
+      .then((json) => {
+        this.response = json;
+      });
+  },
+
+
+  components: { TimeLine }
 }
 
 </script>
 <template>
-
 
   <div class="infos">
     <div class="title">Date Formatter</div>
@@ -50,22 +58,19 @@ export default {
     </div>
 
     <div class="container__converted">
-      <label for="convertedData"> — Data Convertida — </label>
-      <input id="convertedData" type="text" v-bind:value="response.date" disabled>
+      <label for="convertedData"> — Data Formatada — </label>
+      <input id="convertedData" type="text" v-bind:value="convertedDate" disabled>
     </div>
 
     <div class="container__button">
-      <button id="format">Formatar</button>
+      <button id="format" @click="formatDate()">Formatar</button>
     </div>
 
   </div>
 
-  <TimeLine />
-
 </template>
 
 <style >
-
 .infos {
   padding-bottom: 25px;
   width: 55%;
@@ -106,7 +111,7 @@ strong {
   height: auto;
   margin: 0 auto;
   margin-bottom: 40px;
-  border-bottom: 1px solid var(--vt-c-green);
+  
 }
 
 input {
@@ -126,7 +131,8 @@ input:focus {
   outline: none;
 }
 
-#receveidData, #convertedData{
+#receveidData,
+#convertedData {
   text-align: center;
 }
 
@@ -165,7 +171,6 @@ button {
   transition: 0.4s;
   width: 300px;
   font-size: 15px;
-  border-radius: 5px;
 }
 
 #format:hover {
