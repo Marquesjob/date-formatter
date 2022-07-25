@@ -1,43 +1,41 @@
 <template>
+
     <div class="main">
-        <div class="head">Step to Step</div>
+       
         <div class="container">
             <ul>
                 <li>
-                    <h3 class="heading">FrontEnd Developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
-                        totam </p>
-                    <a href="#">Read More ></a>
+                    <h3 class="heading"></h3>
+                    <p></p>
+
+        
+                    <a href="#"></a>
 
                 </li>
                 <li>
-                    <h3 class="heading">BackEnd Developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
-                        totam </p>
-                    <a href="#">Read More ></a>
+                    <h3 class="heading"></h3>
+                    <p> </p>
+                    <a href="#"></a>
 
-                 
+
                 </li>
                 <li>
-                    <h3 class="heading">Full Stack Developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
-                        totam </p>
-                    <a href="#">Read More ></a>
-                  
+                    <h3 class="heading"></h3>
+                    <p> </p>
+                    <a href="#"></a>
+
                 </li>
                 <li>
-                    <h3 class="heading">App Developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
-                        totam </p>
-                    <a href="#">Read More ></a>
-                   
+                    <h3 class="heading"></h3>
+                    <p> </p>
+                    <a href="#"></a>
+
                 </li>
                 <li>
-                    <h3 class="heading">App Developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
-                        totam </p>
-                    <a href="#">Read More ></a>
-                  
+                    <h3 class="heading"></h3>
+                    <p></p>
+                    <a href="#"></a>
+
                 </li>
             </ul>
         </div>
@@ -64,7 +62,6 @@
     color: var(--vt-c-green);
     position: relative;
     margin-top: 35px;
-    margin-bottom: 55px;
 }
 
 
@@ -76,6 +73,7 @@
     margin: auto 0;
     margin-bottom: 63px;
     position: relative;
+    margin-top: 55px;
 }
 
 .container ul {
@@ -90,7 +88,7 @@
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    background-image: linear-gradient(to bottom, var(--vt-c-green), var(--vt-c-indigo));
+    background-image: linear-gradient(to bottom, var(--vt-c-green), var(--vt-c-green));
 }
 
 .container ul li {
