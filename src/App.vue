@@ -42,10 +42,10 @@ export default {
   <div class="infos">
     <div class="title">Date Formatter</div>
     <div class="description">
-      <p>Pequeno projeto criado para estudo, que tem a finalidade de praticar o processo de recepção e<br />
-        formatação de datas recebidas no formato <strong>UTC</strong> de uma <strong>API</strong> Utilizando<strong>
+      <p>Pequeno projeto desenvolvido para estudo, que tem a finalidade de praticar a <br />
+        formatação de datas no formato <strong>UTC</strong> Utilizando<strong>
           Javascript.</strong></p>
-      <p><strong>API</strong> utilizada no projeto<strong>:</strong><a href="https://jsonplaceholder.typicode.com/"
+      <p><strong>API Fake</strong> utilizada no projeto para mockar dados<strong>:</strong><a href="https://jsonplaceholder.typicode.com/"
           target="__blank"> JSONPlaceholder — Free Fake REST API.</a></p>
     </div>
   </div>
