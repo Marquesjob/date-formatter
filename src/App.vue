@@ -107,11 +107,9 @@ strong {
 }
 
 .content {
-  width: 55%;
   height: auto;
   margin: 0 auto;
   margin-bottom: 40px;
-  
 }
 
 input {
