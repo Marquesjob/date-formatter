@@ -84,6 +84,7 @@ export default {
 }
 
 .title {
+  text-align: center;
   margin-bottom: 15px;
   font-size: 30px;
   color: var(--vt-c-green);
@@ -113,7 +114,8 @@ strong {
 }
 
 input {
-  width: 300px;
+  max-width: 300px;
+  width: 80%;
   height: 35px;
   display: block;
   margin: 0 auto;
